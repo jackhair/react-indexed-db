@@ -11,7 +11,8 @@
   "scripts": {
     "test": "karma start ./karma.conf.js",
     "typedoc": "typedoc --out ./docs --mode modules --tsconfig ./tsconfig.json ./src/",
-    "build": "webpack"
+    "build": "webpack",
+    "install": "webpack",
   },
   "repository": {
     "type": "git",
