@@ -45,6 +45,7 @@ export function useIndexedDB(
   getByIndex: (indexName: string, key: any) => Promise<any>;
   clear: () => Promise<any>;
 } {
+  if (typeof window === "undefined") return null;
   if (!indexeddbConfiguration.name || !indexeddbConfiguration.version) {
     throw new Error('Please, initialize the DB before the use.');
   }
